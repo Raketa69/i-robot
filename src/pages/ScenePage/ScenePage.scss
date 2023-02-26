@@ -1,0 +1,74 @@
+  @font-face {
+      font-family: Cruiser;
+      src: local("2015_Cruiser"), url(../../../public/fonts/2015_Cruiser.ttf);
+      font-weight: 400;
+  }
+
+  .scene_content {
+      background-image: url('../../../public/images/ScenePage/scenePageBg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+
+      .scene__text {
+          background-image: url('../../../public/images/ScenePage/sceneText.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 142px;
+      }
+
+      .scenes {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+
+          .scene {
+              margin: 20px;
+              width: 400px;
+              height: 300px;
+              box-shadow: 0px 0px 20px black;
+
+              .scene_img {
+                  width: 400px;
+                  height: 200px;
+                  background-image: url('../../../public/images/ScenePage/sceneTest.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+
+              }
+
+              .scene_text {
+                  background: linear-gradient(to right, #2b4b7e, #122138);
+                  width: 400px;
+                  height: 100px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: white;
+                  font-family: 'Cruiser';
+                  font-size: 30px;
+
+
+              }
+          }
+      }
+  }
+
+  .hvr-grow {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      transition-duration: 0.3s;
+      transition-property: transform;
+  }
+
+  .hvr-grow:hover {
+      transform: scale(1.06);
+  }
